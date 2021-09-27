@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeate(12, 1fr);
+}
+
+header {
+
+}
+
+#mission {
+
+}
+
+#about {
+
+}
+
+#services {
+
+}
+
+#contact {
+  
+}
+
+#footer {
+  
+}
