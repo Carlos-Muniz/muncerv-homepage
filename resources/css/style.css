@@ -1,18 +1,58 @@
+html {
+  font-family: Helvetica;
+  font-size: 20px;
+  text-align: center;
+}
+
 .grid {
   display: grid;
-  width: 100%;
-  height: 2600px;
+  width: 1200px;
+  height: 2650px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(52, 1fr);
+  grid-template-rows: repeat(51, 1fr);
   grid-row-gap: 10px;
+  margin: 0 auto;
+  
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+
+html, header, #mission, #about, #services, #contact, footer, #links {
+  border: 1px solid red;
 }
 
 header {
   grid-area: 1 / 1 / span 2 / span 12;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+#links {
+  display: inline-flex;
+  width: 400px;
+  justify-content: space-between;
+  text-decoration: underline;
+  font-size: 1.5rem;
 }
 
 #mission {
   grid-area: 3 / 1 / span 12 / span 12;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
 }
 
 #about {
@@ -29,4 +69,6 @@ header {
 
 footer {
   grid-area: 51 / 1 / span 1 / span 4;
+  display: flex;
+  align-items: center;
 }
