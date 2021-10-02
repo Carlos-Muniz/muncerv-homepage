@@ -53,6 +53,11 @@ header {
   display: flex;
   margin: 0 auto;
   align-items: center;
+  background-image: url(../images/black-marble.jpg);
+}
+
+#box {
+  background-color: white;
 }
 
 #about {
