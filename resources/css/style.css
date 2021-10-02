@@ -1,35 +1,34 @@
 html {
-  font-family: Helvetica;
-  font-size: 25px;
+  font-family: 'Zilla Slab', serif;
+  font-size: 24px;
   text-align: center;
 }
 
 .grid {
   display: grid;
-  max-width: 1200px;
-  height: 2650px;
+  max-width: 1080px;
+  height: 1090px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(51, 1fr);
-  grid-row-gap: 10px;
+  grid-template-rows: repeat(21, 1fr);
+  grid-row-gap: 20px;
   margin: 0 auto;
   
 }
 
 h1 {
   font-size: 2rem;
+  font-family: 'Staatliches', cursive;
 }
 h2 {
   font-size: 2.5rem;
+  font-family: 'Oswald', sans-serif;
 }
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  font-family: 'Oswald', sans-serif;
 }
 h4 {
   font-size: 1.25rem;
-}
-
-html, header, #mission, #about, #services, #contact, footer, #links, #about-content, #service-blocks, #contact-blocks {
-  border: 1px solid red;
 }
 
 header {
@@ -42,14 +41,14 @@ header {
 
 #links {
   display: inline-flex;
-  width: 500px;
+  width: 250px;
   justify-content: space-between;
   text-decoration: underline;
   font-size: 1.5rem;
 }
 
 #mission {
-  grid-area: 3 / 1 / span 12 / span 12;
+  grid-area: 3 / 1 / span 8 / span 12;
   display: flex;
   margin: 0 auto;
   align-items: center;
@@ -57,33 +56,32 @@ header {
 }
 
 #box {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px 0;
+  width: 66%;
 }
 
 #about {
-  grid-area: 15 / 1 / span 12 / span 12;
-}
-
-#about-content {
+  grid-area: 11 / 1 / span 7 / span 12;
   display: inline-flex;
   align-items: center;
 }
 
-#about-content figure {
+#about-header {
   width: 50%;
-  height: auto;
+  margin: auto auto;
 }
 
-#about-content p {
+#about-content {
   width: 50%;
 }
 
 #about-content img {
-  max-width: 100%;
+  width: 100%;
+  max-height: 342px;
 }
 
-
-#services {
+/* #services {
   grid-area: 27 / 1 / span 12 / span 12;
 }
 
@@ -97,10 +95,10 @@ header {
   width: 150px;
   height: 150px;
   margin-bottom: 10px;
-}
+} */
 
 #contact {
-  grid-area: 39 / 1 / span 12 / span 12;
+  grid-area: 18 / 1 / span 3 / span 12;
 }
 
 #contact-blocks {
@@ -108,10 +106,15 @@ header {
   flex-flow: row wrap;
   justify-content: space-around;
   align-content: center;
+  height: 100%;
 }
 
 footer {
-  grid-area: 51 / 1 / span 1 / span 4;
+  grid-area: 21 / 1 / span 1 / span 4;
   display: flex;
   align-items: center;
 }
+
+/* html, header, #mission, #about, #services, #contact, footer, #links, #about-content, #about-header, #service-blocks, #contact-blocks {
+  border: 1px solid red;
+} */
