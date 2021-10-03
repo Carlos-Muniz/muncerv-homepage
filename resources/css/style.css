@@ -56,7 +56,7 @@ header {
 }
 
 #box {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 10px 0;
   width: 66%;
 }
@@ -109,12 +109,27 @@ header {
   height: 100%;
 }
 
+.blocks h3 {
+  padding-bottom: 10px;
+}
+
+#contact-blocks a {
+  display: inline-block;
+  
+}
+
+#contact-blocks img {
+  height: 1rem;
+  vertical-align: middle;
+}
+
+
 footer {
   grid-area: 21 / 1 / span 1 / span 4;
   display: flex;
   align-items: center;
 }
 
-/* html, header, #mission, #about, #services, #contact, footer, #links, #about-content, #about-header, #service-blocks, #contact-blocks {
+/* html, header, #mission, #about, #services, #contact, footer, #links, #about-content, #about-header, #service-blocks, #contact-blocks .blocks{
   border: 1px solid red;
 } */
